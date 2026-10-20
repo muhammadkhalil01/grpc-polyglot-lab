@@ -35,25 +35,7 @@ Pastikan folder tempat executable Go terpasang (biasanya `$(go env GOPATH)/bin`)
 
 ## 3. Struktur proyek
 
-```text
-grpc-polyglot-lab/
-├── .gitignore
-├── user.proto
-├── README.md
-├── go-server/
-│   ├── go.mod
-│   ├── main.go
-│   └── pb/                 # dibuat oleh protoc
-├── python-client/
-│   ├── requirements.txt
-│   ├── client.py
-│   ├── user_pb2.py         # dibuat oleh grpc_tools
-│   └── user_pb2_grpc.py    # dibuat oleh grpc_tools
-└── node-client/
-    ├── package.json
-    ├── client.js
-    └── node_modules/       # dibuat oleh npm install
-```
+![Flowchart Sistem gRPC](docs/flowchart-grpc.png)
 
 ## 4. Generate kode dari kontrak
 

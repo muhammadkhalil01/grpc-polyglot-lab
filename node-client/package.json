@@ -1,0 +1,14 @@
+{
+  "name": "grpc-polyglot-node-client",
+  "version": "1.0.0",
+  "description": "Node.js gRPC client for the Go UserService",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.6",
+    "@grpc/proto-loader": "^0.8.1"
+  }
+}

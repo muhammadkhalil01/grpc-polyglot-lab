@@ -35,7 +35,7 @@ Pastikan folder tempat executable Go terpasang (biasanya `$(go env GOPATH)/bin`)
 
 ## 3. Struktur proyek
 
-![Flowchart Sistem gRPC](docs/flowchart-grpc.png)
+![Arsitektur Komunikasi gRPC Polyglot](docs/Arsitektur%20Komunikasi%20gRPC%20Polyglot.png)
 
 ## 4. Generate kode dari kontrak
 

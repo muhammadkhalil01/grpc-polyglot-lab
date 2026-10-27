@@ -146,19 +146,7 @@ git push -u origin main
 ```
 Ganti `USERNAME_ANDA/NAMA_REPO` dengan alamat repository milik sendiri. Jika Git sudah pernah diinisialisasi, tidak perlu mengulang `git init`. Jika remote `origin` sudah ada, gunakan `git remote set-url origin URL_REPOSITORY`.
 
-## 8. Checklist dokumentasi dan bukti
-
-- [ ] Screenshot versi `git`, Python, Node.js, Go, dan `protoc`.
-- [ ] Screenshot struktur folder proyek.
-- [ ] Screenshot file `user.proto`.
-- [ ] Screenshot terminal Go saat server berjalan.
-- [ ] Screenshot hasil Python Client.
-- [ ] Screenshot hasil Node.js Client.
-- [ ] Screenshot log request di terminal Go.
-- [ ] Screenshot repository GitHub setelah push.
-- [ ] Pastikan README dan kode sesuai dengan implementasi yang benar-benar dijalankan.
-
-## 9. Pemecahan masalah
+## 8. Pemecahan masalah
 
 - **`protoc: command not found` / tidak dikenali:** pastikan folder `bin` dari instalasi protoc sudah masuk `PATH`, lalu buka terminal baru.
 - **`protoc-gen-go: program not found`:** jalankan perintah instalasi plugin Go dan tambahkan `$(go env GOPATH)/bin` ke `PATH`.
@@ -168,4 +156,3 @@ Ganti `USERNAME_ANDA/NAMA_REPO` dengan alamat repository milik sendiri. Jika Git
 - **Field `phone` kosong/tidak dikenali:** generate ulang file Go dan Python dari `user.proto` terbaru, kemudian restart server dan client.
 - **`go run` gagal mengunduh dependensi:** periksa koneksi internet dan jalankan `go mod tidy` dari folder `go-server`.
 
-> Catatan: output di atas adalah output yang diharapkan. Ambil screenshot hanya setelah perintah berhasil dijalankan pada komputer sendiri.
